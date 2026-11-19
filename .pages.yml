@@ -1,0 +1,38 @@
+media:
+  input: assets/images/projects
+  output: /assets/images/projects
+  extensions: [jpg, jpeg, png, webp]
+  rename: safe
+content:
+  - name: projects
+    label: Projects
+    type: file
+    path: data/projects.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Project title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+      - name: published
+        label: Published on website
+        type: boolean
+      - name: cover_image
+        label: Cover photo
+        type: image
+        required: true
+        options:
+          extensions: [jpg, jpeg, png, webp]
+          rename: true
+      - name: gallery
+        label: Additional photos
+        type: image
+        options:
+          multiple:
+            max: 20
+          extensions: [jpg, jpeg, png, webp]
+          rename: true
