@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "title": "Staircase Renovation.",
+    "description": "Stairs Renovation",
+    "published": true,
+    "cover_image": "/assets/images/projects/stairs.jpg",
+    "gallery": [
+      "/assets/images/projects/stairs2.jpg"
+    ]
+  }
+]
