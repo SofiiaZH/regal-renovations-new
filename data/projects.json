@@ -7,16 +7,5 @@
     "gallery": [
       "/assets/images/projects/stairs2.jpg"
     ]
-  },
-  {
-    "title": "Try",
-    "description": "Noooice",
-    "published": true,
-    "cover_image": "/assets/images/projects/img7640.jpeg",
-    "gallery": [
-      "/assets/images/projects/img7735.png",
-      "/assets/images/projects/1794884752526900.jpeg",
-      "/assets/images/projects/camera-batch-470d59ce-6700-4d73-a2cf-33e31fafb80e.jpeg"
-    ]
   }
 ]
