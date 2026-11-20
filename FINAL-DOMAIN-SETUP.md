@@ -2,7 +2,7 @@
 
 After the domain is purchased, run a project-wide Find/Replace:
 
-`[FINAL_DOMAIN]` → your real domain only, for example `www.yourdomain.co.nz` (do not include `https://`).
+`regalrenovations.co.nz` → your real domain only, for example `www.yourdomain.co.nz` (do not include `https://`).
 
 Locations prepared for replacement:
 

@@ -45,14 +45,14 @@ Every page includes unique title/description, one H1, semantic content, canonica
 
 ## FINAL DOMAIN SETUP
 
-See `FINAL-DOMAIN-SETUP.md`. Search the whole project for `[FINAL_DOMAIN]` and replace it only after buying the domain.
+See `FINAL-DOMAIN-SETUP.md`. Search the whole project for `regalrenovations.co.nz` and replace it only after buying the domain.
 
 ## Before publication
 
 1. Replace placeholder hero/service/project images with approved Regal photography.
 2. Configure the secure contact form endpoint.
 3. Implement/configure the protected CMS for Dale if self-service project uploads are required at launch.
-4. Purchase/connect domain and replace `[FINAL_DOMAIN]`.
+4. Purchase/connect domain and replace `regalrenovations.co.nz`.
 5. Publish over HTTPS.
 6. Verify Google Search Console and submit sitemap.
 
@@ -77,6 +77,6 @@ See `FINAL-DOMAIN-SETUP.md`. Search the whole project for `[FINAL_DOMAIN]` and r
 - Final approved project photography
 - Secure form-delivery service/backend account and endpoint
 - Protected CMS/backend/storage and Dale login
-- Domain purchase and `[FINAL_DOMAIN]` replacement
+- Domain purchase and `regalrenovations.co.nz` replacement
 - Hosting/domain DNS connection
 - Google Search Console DNS verification and sitemap submission

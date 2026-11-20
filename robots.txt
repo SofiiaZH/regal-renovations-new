@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# REPLACE [FINAL_DOMAIN] after the domain is purchased
-Sitemap: https://[FINAL_DOMAIN]/sitemap.xml
+# REPLACE regalrenovations.co.nz after the domain is purchased
+Sitemap: https://regalrenovations.co.nz/sitemap.xml
