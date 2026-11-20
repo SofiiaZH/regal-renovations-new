@@ -3,6 +3,7 @@ media:
   output: /assets/images/projects
   extensions: [jpg, jpeg, png, webp]
   rename: safe
+
 content:
   - name: projects
     label: Projects
@@ -36,3 +37,31 @@ content:
             max: 20
           extensions: [jpg, jpeg, png, webp]
           rename: true
+
+  - name: reviews
+    label: Reviews
+    type: file
+    path: data/reviews.json
+    format: json
+    list: true
+    fields:
+      - name: author
+        label: Client name
+        type: string
+        required: true
+      - name: text
+        label: Review
+        type: text
+        required: true
+      - name: rating
+        label: Star rating
+        type: number
+        default: 5
+        options:
+          min: 1
+          max: 5
+          step: 1
+      - name: published
+        label: Published on website
+        type: boolean
+        default: false

@@ -54,3 +54,80 @@ if (form) {
     }
   });
 }
+
+/* Regal Renovations — CMS Reviews */
+
+async function loadReviews() {
+  const section = document.getElementById("reviews");
+  const grid = document.getElementById("reviews-grid");
+
+  if (!section || !grid) return;
+
+  // Keep the section hidden until published reviews are loaded.
+  section.hidden = true;
+
+  try {
+    const response = await fetch(
+      new URL("data/reviews.json", document.baseURI),
+      { cache: "no-store" }
+    );
+
+    if (!response.ok) {
+      throw new Error("Reviews could not be loaded");
+    }
+
+    const data = await response.json();
+
+    if (!Array.isArray(data)) return;
+
+    const reviews = data.filter(
+      (review) =>
+        review.published === true &&
+        typeof review.text === "string" &&
+        review.text.trim() &&
+        typeof review.author === "string" &&
+        review.author.trim()
+    );
+
+    if (reviews.length === 0) return;
+
+    grid.replaceChildren();
+
+    reviews.forEach((review) => {
+      const card = document.createElement("article");
+      card.className = "review-card";
+
+      const rating = Number(review.rating);
+      if (Number.isInteger(rating) && rating >= 1 && rating <= 5) {
+        const stars = document.createElement("div");
+        stars.className = "review-stars";
+        stars.textContent = "★".repeat(rating);
+        stars.setAttribute(
+          "aria-label",
+          `${rating} out of 5 stars`
+        );
+        card.appendChild(stars);
+      }
+
+      const quote = document.createElement("blockquote");
+      quote.textContent = review.text;
+
+      const author = document.createElement("p");
+      author.className = "review-author";
+      author.textContent = review.author;
+
+      card.append(quote, author);
+      grid.appendChild(card);
+    });
+
+    section.hidden = false;
+  } catch (error) {
+    console.error("Unable to load reviews:", error);
+  }
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", loadReviews);
+} else {
+  loadReviews();
+}

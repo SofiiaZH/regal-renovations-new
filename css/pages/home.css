@@ -118,3 +118,57 @@
     padding: 70px 6vw;
   }
 }
+/* Client reviews */
+
+.reviews-section {
+  padding: 100px 24px;
+  background: #101b16;
+  color: #fff;
+}
+
+.reviews-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reviews-eyebrow {
+  color: #a6d5b3;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.reviews-section h2 {
+  font-size: clamp(32px, 5vw, 54px);
+  margin: 18px 0;
+}
+
+.reviews-intro {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  color: #c5d0c9;
+  line-height: 1.8;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 24px;
+}
+
+.reviews-placeholder {
+  padding: 45px 25px;
+  border: 1px solid rgba(166, 213, 179, 0.25);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+@media (max-width: 600px) {
+  .reviews-section {
+    padding: 65px 20px;
+  }
+}
+.reviews-section[hidden] {
+  display: none !important;
+}
