@@ -172,3 +172,50 @@
 .reviews-section[hidden] {
   display: none !important;
 }
+
+
+/* CMS review cards */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.review-card {
+  background: #192b22;
+  border: 1px solid rgba(166, 213, 179, 0.3);
+  border-radius: 16px;
+  padding: 36px 30px;
+  text-align: left;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.review-stars {
+  color: #e8bc65;
+  font-size: 23px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.review-card blockquote {
+  margin: 0 0 26px;
+  padding: 0;
+  border: 0;
+  color: #f3f5f2;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.review-author {
+  color: #b7d9c2;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .review-card {
+    padding: 28px 24px;
+  }
+}
