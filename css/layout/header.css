@@ -74,13 +74,18 @@
 }
 .menu-toggle {
   display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  padding-bottom: 4px;
+  line-height: 1;
   border: 1px solid #ffffff55;
   background: #0b100d;
   color: #fff;
   border-radius: 50%;
   width: 46px;
   height: 46px;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 @media (max-width: 850px) {
   .nav {
@@ -93,7 +98,7 @@
     transform: translateX(-25px);
   }
   .menu-toggle {
-    display: block;
+    display: flex;
   }
   .nav-links {
     display: none;
@@ -135,7 +140,7 @@
     max-height: calc(100vh - 102px);
     overflow-y: auto;
   }
-  .menu-toggle {
+    .menu-toggle {
     width: 42px;
     height: 42px;
     flex: 0 0 42px;
